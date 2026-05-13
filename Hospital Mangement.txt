@@ -1,0 +1,43 @@
+FAANG-Level Vanilla JS Full Stack Project
+
+Smart Real-Time Hospital Queue & Appointment Management System
+
+This is a very strong real-world project because it combines:
+
+Real-time queue management
+Slot booking
+Priority scheduling
+Notifications
+Queue systems
+Caching
+Authentication
+Scalability concepts
+
+This project resembles simplified versions of:
+
+Practo
+Apollo appointment systems
+Hospital management systems
+Queue/token systems
+
+
+
+PROJECT FEATURES
+Patient Features
+Book appointment
+Live token tracking
+Doctor availability
+Appointment history
+Search doctors
+Emergency priority booking
+Notifications
+Doctor/Admin Features
+Manage appointments
+Approve/reject bookings
+Live patient queue
+Analytics dashboard
+Slot management
+
+
+
+

@@ -38,6 +38,36 @@ Live patient queue
 Analytics dashboard
 Slot management
 
+| Feature                  | Concept              |
+| ------------------------ | -------------------- |
+| Live queue updates       | WebSockets           |
+| Emergency prioritization | Priority Queue (DSA) |
+| Appointment caching      | Redis                |
+| Notifications            | BullMQ               |
+| JWT auth                 | Authentication       |
+| Offline support          | IndexedDB            |
+| Debounced search         | Optimization         |
+| Infinite history         | Virtual rendering    |
+| CI/CD                    | DevOps               |
 
+
+TECH STACK
+Frontend
+Vanilla JS
+HTML
+CSS
+Backend
+Node.js
+Express
+Socket.IO
+Database
+MongoDB
+Cache
+Redis
+Queue
+BullMQ
+DevOps
+Docker
+GitHub Actions
 
 

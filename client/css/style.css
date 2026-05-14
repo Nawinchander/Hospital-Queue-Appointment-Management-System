@@ -1,0 +1,18 @@
+body {
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.queue-card {
+  border: 1px solid #ccc;
+
+  padding: 10px;
+
+  margin-top: 10px;
+}

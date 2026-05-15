@@ -35,3 +35,26 @@ server.listen(5000, () => {
 
 
 
+const express = require('express');
+
+const http = require('http');
+
+const {
+  initializeSocket
+} = require('./sockets/socketManager');
+
+const app = express();
+
+const server =
+http.createServer(app);
+
+initializeSocket(server);
+
+server.listen(5000, () => {
+  console.log('Server Running');
+});
+
+
+
+
+

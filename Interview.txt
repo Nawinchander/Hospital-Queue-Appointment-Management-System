@@ -39,3 +39,31 @@ modularity
 testing
 
 
+FAANG-Level Additions Later
+
+You can later add:
+
+Rooms
+socket.join(roomId);
+
+Used for:
+
+private chats
+delivery rooms
+exam rooms
+Redis Adapter
+
+For multiple servers:
+npm install @socket.io/redis-adapter
+
+Used for:
+
+distributed sockets
+horizontal scaling
+Namespaces
+io.of('/admin');
+
+Used for:
+
+admin dashboards
+separate domains

@@ -1,0 +1,17 @@
+Why Modularize Sockets?
+
+Because in large apps:
+
+different domains
+different events
+easier maintenance
+microservice friendly
+Interview Questions
+Why Separate Socket Service?
+
+Because:
+
+avoids duplicate connections
+improves maintainability
+reusable architecture
+

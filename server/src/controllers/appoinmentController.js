@@ -36,3 +36,30 @@ async (req, res) => {
       .json(err);
   }
 };
+
+
+const {
+  getIO
+} = require('../sockets/socketManager');
+
+exports.createAppointment =
+async (req, res) => {
+
+  const appointment =
+    await Appointment.create(
+      req.body
+    );
+
+  const io = getIO();
+
+  io.emit(
+    'new-appointment',
+    appointment
+  );
+
+  res.status(201)
+    .json(appointment);
+};
+
+const io = require('../server');
+

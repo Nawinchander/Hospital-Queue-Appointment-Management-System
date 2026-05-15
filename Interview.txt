@@ -15,3 +15,27 @@ avoids duplicate connections
 improves maintainability
 reusable architecture
 
+Why Use Singleton Socket Instance?
+
+Multiple socket instances:
+
+increase memory
+duplicate events
+create scaling problems
+
+Singleton avoids this.
+
+Why Socket Manager on Backend?
+
+To avoid:
+
+circular imports
+tightly coupled architecture
+
+Also improves:
+
+scalability
+modularity
+testing
+
+

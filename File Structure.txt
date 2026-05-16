@@ -54,3 +54,44 @@ hospital-queue-system/
 ├── .github/workflows/
 └── README.md
 
+
+
+
+
+
+
+
+
+Client
+ │
+ ▼
+CDN
+ │
+ ▼
+Load Balancer
+ │
+ ▼
+API Gateway
+ │
+ ├── Auth Service
+ ├── Booking Service
+ ├── Notification Service
+ ├── Analytics Service
+ └── Recommendation Service
+      │
+      ▼
+Kafka Event Bus
+      │
+      ▼
+Redis Cache
+      │
+      ▼
+MongoDB Cluster
+
+
+
+
+
+
+
+

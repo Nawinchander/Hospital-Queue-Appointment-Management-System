@@ -61,33 +61,72 @@ hospital-queue-system/
 
 
 
-
-Client
- │
- ▼
-CDN
- │
- ▼
-Load Balancer
- │
- ▼
-API Gateway
- │
- ├── Auth Service
- ├── Booking Service
- ├── Notification Service
- ├── Analytics Service
- └── Recommendation Service
-      │
-      ▼
-Kafka Event Bus
-      │
-      ▼
-Redis Cache
-      │
-      ▼
-MongoDB Cluster
-
+hospital-queue-system/
+│
+├── client/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── api/
+│   │   │   ├── appointmentApi.js
+│   │   │   └── authApi.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── socketService.js
+│   │   │   ├── authService.js
+│   │   │   └── storageService.js
+│   │   │
+│   │   ├── components/
+│   │   │   ├── queueCard.js
+│   │   │   └── notification.js
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── debounce.js
+│   │   │   └── formatter.js
+│   │   │
+│   │   └── app.js
+│   │
+│   ├── index.html
+│   └── login.html
+│
+├── server/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── db.js
+│   │   │   └── redis.js
+│   │   │
+│   │   ├── controllers/
+│   │   │   ├── appointmentController.js
+│   │   │   └── authController.js
+│   │   │
+│   │   ├── middleware/
+│   │   │   └── authMiddleware.js
+│   │   │
+│   │   ├── models/
+│   │   │   ├── Appointment.js
+│   │   │   └── User.js
+│   │   │
+│   │   ├── queues/
+│   │   │   ├── notificationQueue.js
+│   │   │   └── notificationWorker.js
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── appointmentRoutes.js
+│   │   │   └── authRoutes.js
+│   │   │
+│   │   ├── services/
+│   │   │   └── cacheService.js
+│   │   │
+│   │   ├── sockets/
+│   │   │   └── socketManager.js
+│   │   │
+│   │   └── server.js
+│   │
+│   └── Dockerfile
+│
+├── docker-compose.yml
+└── .github/workflows/
 
 
 

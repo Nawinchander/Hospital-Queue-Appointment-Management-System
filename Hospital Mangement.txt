@@ -71,3 +71,21 @@ Docker
 GitHub Actions
 
 
+
+| Priority | Concept             |
+| -------- | ------------------- |
+| 1        | WebSockets          |
+| 2        | Redis               |
+| 3        | Queue System        |
+| 4        | Kafka               |
+| 5        | Microservices       |
+| 6        | Docker              |
+| 7        | Kubernetes          |
+| 8        | CI/CD               |
+| 9        | Distributed Caching |
+| 10       | Observability       |
+
+
+
+
+

@@ -1,0 +1,79 @@
+| Technology | Purpose     |
+| ---------- | ----------- |
+| JWT        | Secure APIs |
+| Redis      | Fast cache  |
+| BullMQ     | Async jobs  |
+| WebSockets | Live queue  |
+| Docker     | Deployment  |
+| MongoDB    | Scalable DB |
+
+
+Frontend
+   │
+   ▼
+Socket Service
+   │
+   ▼
+Node.js API
+   │
+   ├── JWT Authentication
+   ├── Redis Cache
+   ├── BullMQ Queue
+   └── MongoDB
+
+
+FAANG INTERVIEW QUESTIONS
+Why Redis?
+
+To reduce:
+
+database hits
+response latency
+
+Redis is memory-based and extremely fast.
+
+Why BullMQ?
+
+Notification sending:
+
+should not block APIs
+
+BullMQ provides:
+
+retries
+async processing
+job persistence
+
+Why JWT?
+
+Stateless authentication:
+
+scalable
+no server session needed
+Why WebSockets?
+
+Queue updates are real-time.
+
+Polling wastes:
+
+bandwidth
+server resources
+NEXT FAANG-LEVEL FEATURES
+
+After this you can add:
+
+Intermediate
+Priority Queue
+Role-based access
+Appointment rescheduling
+Advanced
+Redis Pub/Sub
+WebSocket rooms
+Analytics dashboard
+FAANG-Level
+Kafka
+Kubernetes
+Microservices
+Distributed caching
+Observability
+Dead Letter Queue

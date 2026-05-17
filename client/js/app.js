@@ -86,3 +86,15 @@ async () => {
 
 loadAppointments();
 
+
+socket.on(
+  'new-appointment',
+
+  (appointment) => {
+
+    console.log(
+      'Live Appointment:',
+      appointment
+    );
+  }
+);

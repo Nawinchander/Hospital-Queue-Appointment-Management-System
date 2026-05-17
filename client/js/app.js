@@ -1,8 +1,6 @@
-import {
-  getAppointments,
-  createAppointment
-}
-from './api/appointmentApi.js';
+import { getAppointments, createAppointment } from './api/appointmentApi.js';
+
+import socket from './services/socketService.js';
 
 const patient =
 document.getElementById(

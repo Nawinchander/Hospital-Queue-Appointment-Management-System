@@ -1,38 +1,72 @@
-const Appointment =
-require('../models/Appointment');
+const express =
+require('express');
 
-exports.createAppointment =
-async (req, res) => {
+const router =
+express.Router();
 
-  try {
+const authMiddleware =
+require(
+  '../middleware/authMiddleware'
+);
 
-    const appointment =
-      await Appointment.create(req.body);
+const {
+  createAppointment,
+  getAppointments
+} = require(
+  '../controllers/appointmentController'
+);
 
-    res.status(201)
-      .json(appointment);
+router.post(
+  '/',
+  authMiddleware,
+  createAppointment
+);
 
-  } catch (err) {
+router.get(
+  '/',
+  authMiddleware,
+  getAppointments
+);
 
-    res.status(500)
-      .json(err);
-  }
-};
+module.exports =
+router;
 
-exports.getAppointments =
-async (req, res) => {
 
-  try {
+// const Appointment =
+// require('../models/Appointment');
 
-    const appointments =
-      await Appointment.find()
-      .sort({ priority: -1 });
+// exports.createAppointment =
+// async (req, res) => {
 
-    res.json(appointments);
+//   try {
 
-  } catch (err) {
+//     const appointment =
+//       await Appointment.create(req.body);
 
-    res.status(500)
-      .json(err);
-  }
-};
+//     res.status(201)
+//       .json(appointment);
+
+//   } catch (err) {
+
+//     res.status(500)
+//       .json(err);
+//   }
+// };
+
+// exports.getAppointments =
+// async (req, res) => {
+
+//   try {
+
+//     const appointments =
+//       await Appointment.find()
+//       .sort({ priority: -1 });
+
+//     res.json(appointments);
+
+//   } catch (err) {
+
+//     res.status(500)
+//       .json(err);
+//   }
+// };

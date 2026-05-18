@@ -8,4 +8,12 @@ websocket proxying
 security
 rate limiting
 
+REDIS ADAPTER FOR SOCKET SCALING
+Problem
+
+Without adapter:
+
+Socket emitted on app1
+User connected on app2
+Event lost
 

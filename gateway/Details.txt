@@ -1,0 +1,11 @@
+Why API Gateway?
+
+Responsibilities:
+
+routing
+load balancing
+websocket proxying
+security
+rate limiting
+
+

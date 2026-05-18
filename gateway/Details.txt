@@ -17,3 +17,13 @@ Socket emitted on app1
 User connected on app2
 Event lost
 
+
+not installed check -
+
+npm install @socket.io/redis-adapter
+
+
+
+
+
+

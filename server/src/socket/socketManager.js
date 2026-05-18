@@ -1,8 +1,17 @@
+
+const { createAdapter } =
+require('@socket.io/redis-adapter');
+
+const { createClient } =
+require('redis');
+
 let io;
 
-const initializeSocket = (server) => {
+const initializeSocket =
+async (server) => {
 
-  const socketIo = require('socket.io');
+  const socketIo =
+    require('socket.io');
 
   io = socketIo(server, {
     cors: {
@@ -10,33 +19,84 @@ const initializeSocket = (server) => {
     }
   });
 
-  io.on('connection', (socket) => {
+  const pubClient =
+    createClient({
+      url: 'redis://redis:6379'
+    });
 
-    console.log(
-      'Client Connected'
-    );
+  const subClient =
+    pubClient.duplicate();
 
-    socket.on('disconnect', () => {
+  await pubClient.connect();
+
+  await subClient.connect();
+
+  io.adapter(
+    createAdapter(
+      pubClient,
+      subClient
+    )
+  );
+
+  io.on(
+    'connection',
+
+    (socket) => {
 
       console.log(
-        'Client Disconnected'
+        'Socket Connected'
       );
-    });
-  });
+    }
+  );
 };
 
-const getIO = () => {
-
-  if (!io) {
-    throw new Error(
-      'Socket.io not initialized'
-    );
-  }
-
-  return io;
-};
+const getIO = () => io;
 
 module.exports = {
   initializeSocket,
   getIO
 };
+
+
+// let io;
+
+// const initializeSocket = (server) => {
+
+//   const socketIo = require('socket.io');
+
+//   io = socketIo(server, {
+//     cors: {
+//       origin: '*'
+//     }
+//   });
+
+//   io.on('connection', (socket) => {
+
+//     console.log(
+//       'Client Connected'
+//     );
+
+//     socket.on('disconnect', () => {
+
+//       console.log(
+//         'Client Disconnected'
+//       );
+//     });
+//   });
+// };
+
+// const getIO = () => {
+
+//   if (!io) {
+//     throw new Error(
+//       'Socket.io not initialized'
+//     );
+//   }
+
+//   return io;
+// };
+
+// module.exports = {
+//   initializeSocket,
+//   getIO
+// };

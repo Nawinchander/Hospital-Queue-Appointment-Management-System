@@ -1,0 +1,26 @@
+Client
+  │
+  ▼
+NGINX API Gateway
+  │
+  ├── Auth Service
+  ├── Appointment Service
+  ├── Notification Service
+  └── Socket Server
+          │
+          ▼
+      Redis Adapter
+          │
+  ┌───────┴────────┐
+  ▼                ▼
+Node Instance 1  Node Instance 2
+        │
+        ▼
+Redis + MongoDB
+
+
+
+
+
+
+

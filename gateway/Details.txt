@@ -22,6 +22,19 @@ not installed check -
 
 npm install @socket.io/redis-adapter
 
+Why Redis Adapter?
+
+Synchronizes socket events:
+
+across multiple servers
+across distributed deployments
+
+Used heavily in:
+
+chat apps
+ride tracking
+real-time systems
+
 
 
 

@@ -1,0 +1,8 @@
+| Type             | Purpose               |
+| ---------------- | --------------------- |
+| Unit Test        | Function testing      |
+| Integration Test | API testing           |
+| Load Test        | Performance           |
+| Contract Test    | Service communication |
+
+

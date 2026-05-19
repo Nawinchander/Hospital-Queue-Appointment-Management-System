@@ -17,3 +17,6 @@ export default function () {
 
   sleep(1);
 }
+
+
+// k6 run load-tests/api/appointment-load.js

@@ -1,0 +1,18 @@
+hospital-system/
+│
+├── client/
+│
+├── server/
+│
+├── gateway/
+│
+├── load-tests/
+│   ├── appointment-load.js
+│   ├── auth-load.js
+│   ├── websocket-load.js
+│   └── stress-test.js
+│
+├── docker-compose.yml
+└── README.md
+
+

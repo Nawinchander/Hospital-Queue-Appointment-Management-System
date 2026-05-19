@@ -1,3 +1,12 @@
+// Why E2E Testing?
+
+// Tests:
+
+// real browser
+// complete flow
+// actual user interaction
+
+
 describe(
 'Login Page',
 

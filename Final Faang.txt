@@ -63,5 +63,22 @@ hospital-system/
 
 
 
+| Concept             | Status |
+| ------------------- | ------ |
+| WebSockets          | ✅      |
+| Distributed Sockets | ✅      |
+| Redis               | ✅      |
+| BullMQ              | ✅      |
+| JWT                 | ✅      |
+| API Gateway         | ✅      |
+| Docker              | ✅      |
+| CI/CD               | ✅      |
+| Horizontal Scaling  | ✅      |
+| Backend Tests       | ✅      |
+| Frontend Tests      | ✅      |
+| E2E Tests           | ✅      |
+| Load Testing        | ✅      |
+
+
 
 

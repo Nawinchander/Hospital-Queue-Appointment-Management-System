@@ -1,0 +1,20 @@
+Advanced
+Kafka
+Elasticsearch
+Role-based access
+Dead Letter Queue
+
+Very Advanced
+Microservices
+Kubernetes
+Prometheus
+Grafana
+Distributed tracing
+
+
+Elite-Level
+Event sourcing
+CQRS
+Multi-region deployment
+AI prediction engine
+Distributed locking

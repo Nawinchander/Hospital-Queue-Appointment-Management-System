@@ -1,0 +1,12 @@
+| Feature                 | Why Important        |
+| ----------------------- | -------------------- |
+| API Gateway             | Central routing      |
+| Redis Adapter           | Distributed sockets  |
+| CI/CD                   | Automation           |
+| Backend Testing         | Reliability          |
+| Frontend Testing        | UI correctness       |
+| E2E Testing             | Full flow validation |
+| Load Testing            | Scalability          |
+| Multiple Node Instances | Horizontal scaling   |
+
+

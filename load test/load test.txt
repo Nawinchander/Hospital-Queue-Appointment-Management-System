@@ -36,6 +36,14 @@ load-tests/
 └── soak/
     └── soak-test.js
 
+| Type        | Purpose               |
+| ----------- | --------------------- |
+| Load Test   | Normal traffic        |
+| Stress Test | Breaking point        |
+| Spike Test  | Sudden traffic spike  |
+| Soak Test   | Long-duration testing |
+| Volume Test | Huge data testing     |
+
 
 Why Separate Folder?
 

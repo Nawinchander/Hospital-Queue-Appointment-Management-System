@@ -16,3 +16,39 @@ hospital-system/
 └── README.md
 
 
+
+load-tests/
+│
+├── api/
+│   ├── appointment-load.js
+│   ├── auth-load.js
+│   └── queue-load.js
+│
+├── websocket/
+│   └── socket-load.js
+│
+├── stress/
+│   └── stress-test.js
+│
+├── spike/
+│   └── spike-test.js
+│
+└── soak/
+    └── soak-test.js
+
+
+Why Separate Folder?
+
+Because load testing targets:
+
+API Gateway
+backend APIs
+Redis
+database
+sockets
+queues
+
+It is a system-level concern.
+
+Recommended Structure
+
